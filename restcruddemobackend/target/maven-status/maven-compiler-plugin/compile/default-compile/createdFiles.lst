@@ -1,0 +1,7 @@
+com\niit\configuration\DBConfiguration.class
+com\niit\configuration\WebAppConfig.class
+com\niit\dao\StudentDao.class
+com\niit\restcruddemobackend\App.class
+com\niit\dao\StudentDaoImpl.class
+com\niit\configuration\WebAppInitializer.class
+com\niit\models\Student.class

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body ng-app="app">
+<div ng-controller="StudentCtrl">
+Student Form<br>
+Enter Student name:<input type="text" ng-model="student.name"><br>
+Enter Student Age:<input type="number" ng-model="student.age"><br>
+Enter Department:<input type="text" ng-model="student.dept">
+<input type="submit" ng-click="addStudent()">
+</div>
+</body>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/controller.js"></script>
+<script type="text/javascript" src="js/service.js"></script>
+
+</html>

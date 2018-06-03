@@ -1,0 +1,9 @@
+/**
+ * Modular
+ */
+var app=angular.module("app",['ngRoute'])//load angular-route.js
+app.config(function($routeProvider){
+	//http://localhost:8080/..../index.html#/home
+	$routeProvider.when('/home',{templateUrl:'views/home.html'})
+
+})

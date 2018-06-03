@@ -1,0 +1,22 @@
+/**
+ *  controller for update student details
+ *  1.select * from student where id=? - always this query will get executed
+ *   
+ */
+// updatestudentform/:id
+app.controller('UpdateStudentCtrl',function($scope,studentService,$routeParams){
+	var id=$routeParams.id
+	
+	//select * from student where id=?
+	
+	studentService.getStudentById(id).then(function(response){
+		console.log(response.data)
+		$scope.student=response.data
+	},function(response){
+		
+		console.log(response.data)
+		console.log(response.status)
+	
+	})
+
+})

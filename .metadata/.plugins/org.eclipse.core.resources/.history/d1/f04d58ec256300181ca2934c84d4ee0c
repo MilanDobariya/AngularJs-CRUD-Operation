@@ -1,0 +1,32 @@
+
+	<b>Student Details</b>
+	
+		<table>
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Name</th>
+					<th>Age</th>
+					<th>Department</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>
+			<tr ng-repeat="s in students">
+			<td>{{s.id}}</td>
+			<td>{{s.name}}</td>
+			<td>{{s.age}}</td>
+			<td>{{s.dept}}</td>
+			<td><a ng-click="getStudentById(s.id)"><span class="glyphicon glyphicon-info-sign"></span>
+			<a ng-click="deleteStudent(s.id)"><span class="glyphicon glyphicon-trash"></span></a>
+			<a><span class="glyphicon glyphicon-pencil"></span></a>
+			</tr>
+			</tbody>
+
+		</table>
+	{{student}}
+	{{errorMessage}}
+	{{error}}
+
+	</div>
+
